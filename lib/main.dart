@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:stackapp/views/screens/home_page.dart';
 import 'package:stackapp/views/screens/splash_screen.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/splash_screen',
       getPages: [
-        GetPage(name: '/splash_screen', page: ()=>const Splash_screen()),
-        GetPage(name: '/home_page', page: ()=>const Home_page()),
+        GetPage(name: '/splash_screen', page: () => const Splash_screen()),
+        GetPage(name: '/home_page', page: () => const Home_page()),
       ],
     ),
   );
