@@ -26,3 +26,12 @@ List<IconData> categoryicon = [
   Icons.play_circle,
   Icons.emoji_events,
 ];
+
+
+List imagelist = [
+"assets/images/flutter.png",
+"assets/images/java.png",
+"assets/images/python.png",
+"assets/images/c++.png",
+"assets/images/java.png",
+];
